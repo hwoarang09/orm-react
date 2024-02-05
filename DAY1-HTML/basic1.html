@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 검색엔진 최적화를 위한 태그정보들 -->
+    <!-- description, keywords, title, author -->
+    <!-- content에 몇글자 넣는 게 좋을지는 따로 공부하기 -->
+    <meta name="description" content="웹페이지 내용을 서술" />
+    <!-- 웹페이지 내용 중 주요 키워드를 ,로 나열 -->
+    <meta name="keywords" content="엠소프트,채팅솔루션,비대면,실시간웹" />
+    <!-- meta의 og태그는 다른 sns같은 곳으로 내 사이트 요약정보 가져갈때 쓰임 -->
+    <!-- 텍스트로는 정리가 어려운데, 실제 결과물보면 바로암-->
+
+    <!-- SNS OpenGraph Tag -Velog-->
+    <meta name="og:site_name" content="엠소프트웨어" />
+    <meta name="og:title" content="엠소프트웨어를소개합니다." />
+    <meta name="og:description" content="설명설명" />
+    <meta name="og:type" content="website" />
+    <meta
+      name="og:url"
+      content="https://dev.mixedcode.com/event/detail?eid=1"
+    />
+    <meta name="og:image" content="이미지주소" />
+    <!-- 외부리소스 스타일은 우선순위 낮음 -->
+    <link
+      rel="stylesheet"
+      href="./sample.css
+"
+    />
+
+    <!-- 내부스타일시트. 이게 최우선 -->
+    <style>
+      p {
+        background-color: aqua;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>이미지 태그 실습</h1>
+
+    <!-- 절대경로 상대경로 이해하기 -->
+    <!-- 상대경로는 ./ 같은경로   ../ 한단계 위로 -->
+    <!-- /는 현재 도메인 바로 아래로 -->
+    <!-- 절대경로는 전체 도메인을 표시해서 찾음 -->
+
+    <!-- 상대경로 -->
+    <img
+      src="./test.png"
+      alt="테스트사진"
+      style="width: 300px; height: 150px"
+    />
+    <!-- 절대경로 -->
+    <img
+      src="https://avatars.githubusercontent.com/u/62730797?s=48&v=4"
+      alt="테스트사진"
+      style="width: 300px; height: 150px"
+    />
+    <img
+      src="/DAY1-HTML/test.png"
+      alt="테스트사진"
+      style="width: 300px; height: 150px"
+    />
+
+    <img
+      src="/DAY1-HTML/test1.png"
+      alt="엑박방지"
+      style="width: 300px; height: 150px"
+      onerror="this.src='./test2.png'"
+    />
+
+    <!-- p사이에 엔터쳐봐ㅓㅆ자 안 먹음 <br>넣어야 줄바꿈됨. -->
+    <!-- 여기에 스타일  넣는 건 인라인 스타일 -->
+    <p style="background-color: yellow">hihi</p>
+  </body>
+</html>
