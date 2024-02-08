@@ -1,3 +1,10 @@
+.wrap {
+  border: 1px solid #c6c6c6;
+  border-radius: 6px;
+  width: 460px;
+  margin : 0 auto;
+  
+}
 .btn_login {
   display: block;
   width: 100%;
@@ -21,6 +28,7 @@ cursor: pointer;
 
 .panel_inner {
   padding: 20px 28px;
+
 }
 .login_wrap {
   box-sizing: border-box;
@@ -123,7 +131,7 @@ input {
 
 .header_inner {
   position: relative;
-  width: 743px;
+  
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
