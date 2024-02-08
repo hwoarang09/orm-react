@@ -1,17 +1,16 @@
 var container = document.getElementById("container");
 for (var i = 2; i <= 9; i++) {
-  var div = document.createElement("div"); // div 요소 생성
-  //div.textContent = "Div " + i; // 텍스트 내용 설정
-
+  var div = document.createElement("div");
   var header = document.createElement("div");
   var header_num = document.createElement("span");
   var header_dan = document.createElement("span");
-
-  header_num.classList.add("header_num");
   var r = Math.floor(Math.random() * 256);
   var g = Math.floor(Math.random() * 256);
   var b = Math.floor(Math.random() * 256);
   var rgbColor = "rgb(" + r + ", " + g + ", " + b + ")";
+  var main = document.createElement("div");
+
+  header_num.classList.add("header_num");
   header_num.style.color = rgbColor;
   header_num.style.fontSize = "60px";
   header_num.style.fontWeight = "600";
@@ -19,7 +18,7 @@ for (var i = 2; i <= 9; i++) {
   header_dan.textContent = `단`;
   header_dan.style.fontSize = "40px";
   header_dan.style.fontWeight = "800";
-  var main = document.createElement("div");
+
   div.appendChild(header);
   header.appendChild(header_num);
   header.appendChild(header_dan);
@@ -29,8 +28,8 @@ for (var i = 2; i <= 9; i++) {
     line.textContent = `${i} X ${j} = ${i * j} `;
     main.appendChild(line);
   }
-  div.classList.add("grid-item"); // CSS 클래스 추가
 
+  div.classList.add("grid-item"); // CSS 클래스 추가
   main.style.borderColor = rgbColor;
   main.style.borderWidth = "2px";
   main.style.borderStyle = "dashed";
