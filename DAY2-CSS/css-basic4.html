@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellow;
+      }
+      .hidden {
+        visibility: hidden;
+      }
+      .display {
+        display: none;
+      }
+      span {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div이런건 한 줄 다 차지하는 inline -->
+    <!-- span은 블럭이라서 한 줄에 여러 개 붙일 수 있음 -->
+
+    <span>1</span>
+    <span>1</span>
+    <span>1</span>
+    <hr />
+    <span>2</span>
+    <span class="hidden">2</span>
+    <span>2</span>
+    <hr />
+    <span>3</span>
+    <span class="display">3</span>
+    <span>3</span>
+  </body>
+</html>

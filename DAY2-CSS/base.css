@@ -1,0 +1,6 @@
+p {
+  background-color: yellow;
+}
+p.external {
+  background-color: green;
+}

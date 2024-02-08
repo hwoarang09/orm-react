@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p {
+        background-color: red;
+      }
+
+      /* HTML요소 값을 기준으로 스타일 다르게 적용하기*/
+      a[href] {
+        color: black;
+      }
+      a[href="www.yes24.com"] {
+        color: white;
+        background-color: blue;
+      }
+      a[href*="y"] {
+        color: red;
+        background-color: black;
+      }
+      a[href^="http"] {
+        color: gray;
+      }
+      a[href$="nn"] {
+        color: purple;
+      }
+
+      a:link {
+        color: blue;
+        background-color: transparent;
+      }
+
+      a:visited {
+        background-color: transparent;
+      }
+
+      a:hover {
+        background-color: aqua;
+      }
+      a:active {
+        color: yellow;
+        background-color: aqua;
+      }
+      ul a {
+        color: red;
+      }
+      ul > a {
+        color: green;
+      }
+    </style>
+    <link rel="stylesheet" href="./base.css" />
+  </head>
+  <body>
+    <h1>인라인</h1>
+    <p style="background-color: blue; color: white; padding: 5px">인라인코딩</p>
+    <p>기본</p>
+    <p class="external">external</p>
+    <br />
+    <a href="http://naver.com">네이버</a><br />
+    <a href="ysungwon">ysungwon</a><br />
+    <a href="www.yes24.com">YES24</a><br />
+    <a href="aann">aann</a><br />
+
+    <h1>가상클래스</h1>
+    <a href="http://www.op.gg" target="_blank">OP.gg</a><br />
+    <h1>선택생성자?</h1>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li>
+        <ul>
+          <li><a href="#">Nested Link 1</a></li>
+          <li><a href="#">Nested Link 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
