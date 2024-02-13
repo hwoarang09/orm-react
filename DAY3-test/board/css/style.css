@@ -24,6 +24,7 @@ a {
 .board_title{
   margin-bottom: 30px ;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .main_wrap {
@@ -69,3 +70,66 @@ a {
 
 }
 
+
+.bottom_wrap {
+  margin-top:30px;
+  text-align:center;
+  font-size:0;
+}
+
+.bottom_wrap a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  border-left: 0;
+  line-height: 100%;
+}
+
+.bottom_wrap a.num {
+  padding-top: 9px;
+  font-size: 1.4rem;
+} 
+.bottom_wrap a.num.on {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+.bottom_wrap a.bt {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+}
+.bottom_wrap a:first-child {
+  border-left: 1px solid #ddd;
+}
+
+
+/* 공통 버튼 스타일 정의  */
+.bt_wrap {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0;
+}
+
+
+.bt_wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+
+.bt_wrap a:first-child {
+  margin-left: 0;
+}
+
+.bt_wrap a.on {
+  background: #000;
+  color: #fff;
+}
