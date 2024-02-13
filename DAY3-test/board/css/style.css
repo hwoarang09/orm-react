@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size:10px;
+}
+
+ul, li {
+  list-style:none;/* 리스트 앞에 붙는 * 1234 이런 거 빼는 듯? */
+}
+
+a {
+  text-decoration: none; /* a태그 밑줄 안뜨게 */
+  color:inherit; /* 색상은 부모꺼 물려받기 */
+}
+
+.board_wrap {
+  /* 위아래 100px띄우고 가운데에 1000px로만 하고 좌우 남는 공간은 중앙정렬해서 비워두기*/
+  width: 1000px;
+  margin: 100px auto; 
+}
+.board_title{
+  margin-bottom: 30px ;
+  font-size: 3rem;
+}
+
+.main_wrap {
+  width:100%;
+  border-top: 2px solid #000;
+}
+.main_wrap > div {
+  border-bottom: 1px solid #ddd;
+
+}
+.main_wrap > div.caption,
+.main_wrap > div.article {
+  border-bottom: 1px solid #999;
+  font-size: 0;
+}
+.main_wrap > div:last-child {
+  border-bottom: 1px solid #000;
+}
+
+
+.main_wrap > div > div {
+  display: inline-block;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.main_wrap > div.caption > div {
+
+  font-weight: 600;
+}
+
+.main_wrap .num,
+.main_wrap .date,
+.main_wrap .writer,
+.main_wrap .count {
+  width: 10%;
+
+}
+
+.main_wrap .title {
+  width: 60%;
+
+}
+
