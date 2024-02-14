@@ -1,0 +1,17 @@
+@media (max-width:500px){
+  .board_wrap {
+    border:20px dotted blue;
+    background-color: green;
+  }
+}
+
+@media (max-width:1000px){
+  .board_wrap {
+    background-color: orangered;
+  }
+}
+
+
+
+
+
