@@ -1,24 +1,27 @@
+import logo from "./logo.svg";
 import "./App.css";
-import React, { useState, Fragment } from "react";
 
-import FChild from "./functionchild";
+import DataBindingTest from "./DataBindingTest";
 
+import PrimitiveTypeEvent from "./PrimitiveTypeEvent";
+
+import ReferTypeEvent from "./ReferTypeEvent";
+
+import ProductManager from "./ProductManager";
+import ProductList from "./ProductList";
 function App() {
-  const [sample, setSample] = useState("샘플데이터");
   return (
-    <>
-      <div className="App">
-        <div>sample is {sample}</div>
-        <FChild
-          companyName="엠소프트웨어"
-          telephone="01022883839"
-          address="서울시 하이"
-          sample={sample}
-          setSample={setSample}
-        ></FChild>
-      </div>
-      <div>sample is {sample}</div>
-    </>
+    <div className="App">
+      {/* <DataBindingTest></DataBindingTest>
+      <hr></hr>
+      <PrimitiveTypeEvent></PrimitiveTypeEvent>
+      <hr></hr>
+      <ReferTypeEvent></ReferTypeEvent>
+
+      <hr></hr>
+      <ProductManager></ProductManager> */}
+      <ProductList></ProductList>
+    </div>
   );
 }
 
